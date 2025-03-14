@@ -30,16 +30,10 @@ Projeyi çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
    ```
 
 ## 🎮 Nasıl Oynanır?
-- **Yukarı Ok (↑):** Yukarı hareket
-- **Aşağı Ok (↓):** Aşağı hareket
-- **Sol Ok (←):** Sola hareket
-- **Sağ Ok (→):** Sağa hareket
-
-## 📸 Ekran Görüntüsü
-_(Buraya bir ekran görüntüsü ekleyebilirsiniz.)_
-
-## 📜 Lisans
-Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için **LICENSE** dosyasına göz atabilirsiniz.
+- **Yukarı Ok (↑):** & **W** Yukarı hareket
+- **Aşağı Ok (↓):** & **S** Aşağı hareket
+- **Sol Ok (←):** & **A** Sola hareket
+- **Sağ Ok (→):** & **D** Sağa hareket
 
 🚀 Eğlenceli oyunlar dileriz! 😊
 
