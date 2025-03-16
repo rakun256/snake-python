@@ -1,6 +1,8 @@
 # Snake Game 🐍🎮
 
 Bu proje, Python'un **Turtle** modülü kullanılarak geliştirilen klasik **Snake (Yılan) Oyunu**dur. Oyunda yılan, ok tuşlarıyla kontrol edilerek yönlendirilir.
+![resim](https://github.com/user-attachments/assets/48f5de3b-6f85-4cd1-9524-23acd2b1d429)
+
 
 ## 🚀 Özellikler
 - **Klavyeyle Kontrol:** Ok tuşları ile yılanı hareket ettirme
@@ -17,7 +19,7 @@ Projeyi çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
 
 1. **Projeyi klonlayın:**
    ```bash
-   git clone https://github.com/kullaniciadi/snake-game.git
+   git clone https://github.com/rakun256/snake-python.git
    cd snake-game
    ```
 2. **Python'u ve gerekli modülleri yükleyin:**
