@@ -9,14 +9,17 @@ class Snake:
     def create_turtle(self):
         new_segment = Turtle(shape="square")
         new_segment.penup()
-        new_segment.color("white")
-        new_segment.goto(x=self.turtle_x_coordinate, y=0)
-        self.turtle_x_coordinate -= 20
+        new_segment.color("#3C412C")
+        new_segment.goto(self.get_coordinate())
+        self.segments.append(new_segment)
         return new_segment
 
     def create_snake(self):
         for s in range(3):
             self.segments.append(self.create_turtle())
+
+    def extend(self):
+        self.create_turtle()
 
     def move(self):
         for seg_num in range (len(self.segments) - 1, 0, -1):
@@ -40,3 +43,29 @@ class Snake:
     def right(self):
         if self.segments[0].heading() != 180:
             self.segments[0].setheading(0)
+
+    def check_direction(self):
+        if self.segments[0].heading() == 0:
+            return "right"
+        elif self.segments[0].heading() == 90:
+            return "up"
+        elif self.segments[0].heading() == 180:
+            return "left"
+        elif self.segments[0].heading() == 270:
+            return "down"
+
+    def get_coordinate(self):
+        if not self.segments:
+            return 0, 0
+
+        last_segment_x = self.segments[ - 1].xcor()
+        last_segment_y = self.segments[ - 1].ycor()
+
+        if self.check_direction() == "right":
+            return last_segment_x - 20, last_segment_y
+        elif self.check_direction() == "up":
+            return last_segment_x, last_segment_y - 20
+        elif self.check_direction() == "left":
+            return last_segment_x + 20, last_segment_y
+        elif self.check_direction() == "down":
+            return last_segment_x, last_segment_y + 20
